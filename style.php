@@ -32,7 +32,7 @@
 
  <footer class="footer">
       <div class="container">
-        <span class="text-muted">[-!!footerContent!!-]</span>
+        <span class="text-muted">[-!!footerContent!!-] - <a href="https://github.com/acsid/jaimepas.ca"><img src="statics/GitHub-Mark-32px.png"></a></span>
       </div>
     </footer>
 
