@@ -20,7 +20,10 @@
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">5 Pires choses</h4>
-			 <?PHP
+			 
+          </div>
+          <div class="card-body">
+				<?PHP
 				$datas = $database->select("sujet" , ["text","vote","date","url"],["LIMIT" => 5,"ORDER" => ["vote" => "DESC"],]);
 				foreach($datas as $data)
 				{
@@ -29,9 +32,6 @@
 				}
 	
 			?>
-          </div>
-          <div class="card-body">
-				
           </div>
         </div>
         <div class="card mb-4 shadow-sm">
