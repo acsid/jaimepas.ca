@@ -43,7 +43,7 @@
 			
 			use Medoo\Medoo;
  
-			$datas = $database->select("sujet" , ["text","vote","date","url"],["LIMIT" => 5,"ORDER" => ['ORDER' => Medoo::raw('RAND()')],]);
+			$datas = $database->select("sujet" , ["text","vote","date","url"],["LIMIT" => 5,'ORDER' => Medoo::raw('RAND()')]);
 				foreach($datas as $data)
 				{
 					echo "<p class=\"card-text\"><a href=\"/".$data["url"]."\">".$data["text"] . "</a> <img src=\"statics/face.png\"> " . $data["vote"] . "";
